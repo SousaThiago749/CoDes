@@ -1,0 +1,113 @@
+html{
+    min-height: 100%;
+}
+
+body{
+    min-height: 100vh;
+}
+
+footer{
+    height: 100%;
+}
+.img128{
+    height: 4rem;
+    width: 4rem;
+}
+
+.img32{
+    height: 2rem;
+    width: 2rem;
+    align-self: center;
+}
+
+.footer{
+    display: flex;
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid black;
+}
+
+.atalhos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8%;
+    height: auto;
+    width: auto;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    height: auto;
+    width: auto;
+}
+
+.centralizando{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+    min-height: 100%;
+}
+
+.titulo{
+    font-size: 300%;
+    font-weight: bold;
+    padding-left: 20%;
+}
+
+.centralizando2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+
+}
+
+.espacamento{
+    padding: 3rem;
+    min-width: 200px;
+    align-self: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 150%;
+}
+
+.titulo2{
+    font-size: 220%;
+    font-weight: bold;
+    padding-left: 20%;
+    text-align: center;
+}
+
+.espacamento2{
+    padding: 3rem;
+    min-width: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 150%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.centralizando3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10%;
+
+}
+
+.space{
+    flex-direction: column;
+    padding: 15%;
+    align-content: space-around;
+}
+
