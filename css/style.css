@@ -29,8 +29,8 @@ footer{
 .footer{
     display: flex;
     position: fixed;
-    left: 0%;
-    bottom: 0%;
+    left: 1%;
+    bottom: 1%;
     width: 100%;
     height: auto;
     border-top: 1px solid black;
@@ -58,8 +58,8 @@ footer{
 .centralizando{
     display: flex;
     flex-direction: column;
-    padding: 5%;
     align-items: center;
+    padding: 5%;
     min-height: 100%;
 }
 
@@ -75,8 +75,18 @@ footer{
     padding: 10%;
     text-align: justify;
     text-justify: inter-word;
-
 }
+
+.textaoJustificado{
+    font-size: 150%;
+    font-weight: bold;
+    padding: 10%;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+
+
 
 .texto{
     font-size: 150%;
@@ -84,6 +94,15 @@ footer{
     text-align: justify;
     text-justify: inter-word;
 }
+
+.textoPerfil{
+    font-size: 150%;
+    padding: 5%;
+    /* text-align: justify; */
+    text-justify: inter-word;
+    text-align: center;
+}
+
 
 .link{
     font-size: 150%;
@@ -107,12 +126,11 @@ a:visited{
     color: purple;
 } */
 
-.centralizando2{
+.centralizandoGastosFixos{
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100%;
-
 }
 
 .espacamento{
@@ -137,9 +155,33 @@ a:visited{
     justify-content: space-around;
 }
 
+.espacamentoGastos{
+    padding: 3rem;
+    padding-bottom:35%;
+    margin: 2%;
+    min-width: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 150%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
 .concluido{
     padding-top: 80%;
 }
+
+.concluidoGastos{
+    
+    padding-top: 130%;
+}
+
+
+.concluidoPerfil{
+    padding-top: 20%;
+}
+
 .concluidoParcelas{
     padding-top: 40%;
 }
@@ -180,6 +222,85 @@ a:visited{
 }
 
 
-/* .borda{
-    border-bottom: 54px black;
-} */
+.posicionaCaixa{
+    padding-top: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.espacamentoCaixa{
+    padding: 2rem;
+    margin: 2%;
+    align-self: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 110%;
+}
+
+.centralizandoCaixa{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+    min-height: 100%;
+}
+
+
+.textoCaixa{
+    font-size: 150%;
+    padding: 3%;
+    /* text-align: justify; */
+    text-justify: inter-word;
+    text-align: center;
+}
+
+
+.espacoEmail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5%;
+    min-height: 100%;
+}
+
+.email{
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 150%;
+    padding: 10%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.acessar{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+    min-height: 100%;
+    padding-top: 20%;
+}
+
+.footerLogin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 8%;
+    padding-left: 35%;
+    padding-right: 35%;
+    height: auto;
+    width: auto;
+}
+
+.imgLogin{
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    flex-direction: row;
+    padding: 8%;
+    padding-left: 35%;
+    padding-right: 35%;
+}
