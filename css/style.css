@@ -104,29 +104,6 @@ footer{
     text-align: center;
 }
 
-
-.link{
-    font-size: 150%;
-    padding: 5%;
-    text-align: justify;
-    text-justify: inter-word;
-    color: blue;
-}
-
-/* .a{
-    text-decoration: none;
-    color: black;
-}
-a:hover{
-    color: red;
-}
-a:active{
-    color: green;
-}
-a:visited{
-    color: purple;
-} */
-
 .centralizandoGastosFixos{
     display: flex;
     flex-direction: column;
@@ -308,4 +285,25 @@ a:visited{
     padding: 8%;
     padding-left: 35%;
     padding-right: 35%;
+}
+
+.dica{
+    font-size: 150%;
+    font-weight: bold;
+    padding: 5%;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+.dicas{
+    font-size: 140%;
+    font-weight: bold;
+    padding: 10%;
+    text-align: center;
+    text-justify: inter-word;
+
+}
+
+a{
+    color: black;
 }
