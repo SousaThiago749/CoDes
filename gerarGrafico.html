@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
 </head>
     <body>
         <header class="header">
@@ -29,10 +31,23 @@
         <main>
             <ul class="centralizando">
                 <li>
-                    <img class="imgGrafico" src="https://i2.wp.com/www.seekpng.com/png/full/139-1392504_90-progress-bar-1-agreed-icon.png" alt="img7">
+                    <canvas id="myChart" style="width:100%; max-width:1000px"></canvas>
+                </li>
+                <li>
+
                 </li>
                 <li class="texto">
-                    Com gastos fixos
+                    Valor Gasto:
+                </li>
+                <li id="total" class="">
+                    
+                </li>
+
+                <li class="texto">
+                    Valor Disponivel:
+                </li>
+                <li id="disponivel" class="">
+                    
                 </li>
             </ul>
 
