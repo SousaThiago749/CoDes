@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
     console.log('calma daguinho') // Para ver se esta conectado
 
     soma = 0
+// GASTOS FIXOS
     var aguaValor
     var luzValor
     var gasValor
@@ -11,7 +12,13 @@ document.addEventListener('DOMContentLoaded', function(){
     qntPar = 1
     parValor = 4000
     saudeValor = 4000
-    soma = telValor + edValor + transValor + parValor/qntPar + saudeValor
+// GASTOS ADICIONAIS
+    var restauranteValor
+    viagemValor = 1000
+    esteticaValor = 200
+    lazerValor = 300
+
+    soma = telValor + edValor + transValor + parValor/qntPar + saudeValor + viagemValor + esteticaValor + lazerValor
 
 
 // FIXOS
@@ -42,6 +49,22 @@ document.addEventListener('DOMContentLoaded', function(){
     textoSaude = document.querySelector('#textoSaude')
     if (textoSaude!=null){
     textoSaude.innerHTML = saudeValor}
+
+    // VIAGEM
+    textoViagem = document.querySelector('#textoViagem')
+    if (textoViagem!=null){
+    textoViagem.innerHTML = viagemValor}
+
+    // ESTETICA
+    textoEstetica = document.querySelector('#textoEstetica')
+    if (textoEstetica!=null){
+    textoEstetica.innerHTML = esteticaValor}
+
+    // LAZER
+    textoLazer = document.querySelector('#textoLazer')
+    if (textoLazer!=null){
+    textoLazer.innerHTML = lazerValor}
+
 
 
 // VARIAVEIS
@@ -82,9 +105,33 @@ document.addEventListener('DOMContentLoaded', function(){
     })}
 
 
-    soma = soma + parseInt(localStorage['agua']) + parseInt(localStorage['luz']) + parseInt(localStorage['gas'])
+    // // VIAGEM
+    // viagemConcluido = document.querySelector('#concluidoViagem')    
+    // textoViagem = document.querySelector('#textoViagem')
+    // if (viagemConcluido!=null){
+    // viagemConcluido.addEventListener('click', function(event) {
+    //     viagemValor = document.querySelector('#inputViagem').value
+    //     textoViagem.innerHTML = viagemValor
+    //     localStorage.setItem('viagem',viagemValor)
+    //     console.log(localStorage)
+    // })}
 
 
+    // RESTAURANTE
+    restauranteConcluido = document.querySelector('#concluidoRestaurante')    
+    textoRestaurante = document.querySelector('#textoRestaurante')
+    if (restauranteConcluido!=null){
+        restauranteConcluido.addEventListener('click', function(event) {
+        restauranteValor = document.querySelector('#inputRestaurante').value
+        textoRestaurante.innerHTML = restauranteValor
+        localStorage.setItem('restaurante',restauranteValor)
+        console.log(localStorage)
+    })}
+
+
+
+// SOMA
+    soma = soma + parseInt(localStorage['agua']) + parseInt(localStorage['luz']) + parseInt(localStorage['gas']) + parseInt(localStorage['restaurante'])
     console.log(soma)
 
 
@@ -115,9 +162,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // disponivel
     disponivel = localStorage['salario'] - soma
-
-
-
 
 
 
