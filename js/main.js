@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var aguaValor
     var luzValor
     var gasValor
-    telValor = 500
+    telValor = 5000
     edValor = 20000
     transValor = 4000
     qntPar = 1
@@ -14,21 +14,7 @@ document.addEventListener('DOMContentLoaded', function(){
     soma = telValor + edValor + transValor + parValor/qntPar + saudeValor
 
 
-
-
-    // teste = 4
-    // localStorage.setItem('testando',teste)
-    // console.log(localStorage)
-
-
-
-    // localStorage.setItem(['agua','luz','gas'],[aguaValor,luzValor,gasValor])
-    // localStorage.setItem('agua',aguaValor)
-    // localStorage.setItem('luz',luzValor)
-    // localStorage.setItem('gas',gasValor)
-
-
-    // FIXOS
+// FIXOS
 
     // TEL
     textoTel = document.querySelector('#textoTel')
@@ -58,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function(){
     textoSaude.innerHTML = saudeValor}
 
 
-    // VARIAVEIS
+// VARIAVEIS
 
     // AGUA
     aguaConcluido = document.querySelector('#concluidoAgua')    
@@ -101,20 +87,55 @@ document.addEventListener('DOMContentLoaded', function(){
 
     console.log(soma)
 
+
+
+// SALARIO
+    
+    salarioConcluido = document.querySelector('#concluidoSalario')    
+    textoSalario = document.querySelector('#textoSalario')
+    if (salarioConcluido!=null){
+    salarioConcluido.addEventListener('click', function(event) {
+        salarioValor = document.querySelector('#inputSalario').value
+        console.log(salarioValor)
+        if (salarioValor>=1){
+        textoSalario.innerHTML = "Renda Mensal: R$" + salarioValor
+        localStorage.setItem('salario',salarioValor)}
+    })}
+
+    if (localStorage['salario']!=null & textoSalario!=null){
+        textoSalario.innerHTML = "Renda Mensal: R$" + localStorage['salario']}
+
+
+
+
     // soma
     textoSoma = document.querySelector('#total')
     if (textoSoma!=null){
     textoSoma.innerHTML = 'R$' + soma}
 
     // disponivel
-    disponivel = 100000 - soma
+    disponivel = localStorage['salario'] - soma
 
+
+
+
+
+
+
+
+
+// VALORES
     textoDisponivel = document.querySelector('#disponivel')
     if (textoDisponivel!=null){
     textoDisponivel.innerHTML = 'R$' + disponivel}
-    
-    // GRAFICO
-    console.log(total)
+
+
+
+
+
+
+
+// GRAFICO
     var xValues = ["Gastos", "Disponivel"]
     var yValues = [soma, disponivel]
     var barColors = [
