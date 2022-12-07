@@ -307,3 +307,34 @@ footer{
 a{
     color: black;
 }
+
+
+
+/* RENDAS */
+
+.textoRenda{
+    text-align: center;
+    font-size: 150%;
+    padding: 1%;
+    text-justify: inter-word;
+}
+
+
+.textoOpcoes{
+    text-align: center;
+    font-size: 130%;
+    padding-top: 60%;
+    text-justify: inter-word;
+}
+
+.espacamento3{
+    padding: 2rem;
+    margin: 0.5rem;
+    min-width: 200px;
+    border: 1px solid black;
+    background-color: #92CC57;
+    border-radius: 20px;
+    font-size: 150%;
+    text-align: center;
+    justify-content: space-around;
+}
